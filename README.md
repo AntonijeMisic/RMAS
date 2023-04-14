@@ -1,2 +1,2 @@
 # RMAS
-Repository za laboratorijske vezbe iz Razvoja mobilnih aplikacija i servisa
+Repository iz Razvoja mobilnih aplikacija i servisa
