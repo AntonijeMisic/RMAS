@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple"
+    tools:context=".MapActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/mapFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078">
+
+        <SearchView
+            android:id="@+id/searchEvents"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:contextClickable="false"
+            android:background="?attr/colorBackgroundFloating"
+            android:elevation="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnFilter"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:contentDescription="@string/app_name"
+            android:elevation="8dp"
+            app:srcCompat="@drawable/ic_filter"
+            android:background="?attr/colorBackgroundFloating"/>
+
+        <ImageButton
+            android:id="@+id/btnRadius"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/app_name"
+            android:elevation="8dp"
+            app:srcCompat="@drawable/ic_radius"
+            android:background="?attr/colorBackgroundFloating"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_gps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="1dp"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/ic_gps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mapFragment"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="@+id/mapFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/ic_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mapFragment"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/mapFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mapFragment"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="295dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/purple"
+            android:elevation="10dp"
+            android:text="Dodaj dogadjaj"
+            app:cornerRadius="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnTable"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:elevation="2dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_table" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

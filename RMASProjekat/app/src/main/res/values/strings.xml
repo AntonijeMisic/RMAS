@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RMASProjekat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="maps_api_key">AIzaSyBMbpwQ09-BsZWD8ONgQyg74wTnbskgk8Y</string>
+    <string-array name="tip">
+        <item>Radna akcija</item>
+        <item>Prikupljanje novca</item>
+        <item>Volontiranje na festivalu</item>
+        <item>Humanitarna akcija</item>
+        <item>Drugo</item>
+    </string-array>
+    <string name="maxDatum">01-01-2024</string>
+</resources>
